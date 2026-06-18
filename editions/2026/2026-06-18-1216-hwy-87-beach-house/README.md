@@ -26,7 +26,7 @@ angle.
 |-------------|-----------------------------------|---------|
 | Hero        | `images/new-hero.jpg`             | Finished front elevation on stilts |
 | Secondary   | `images/gulf-beach.jpeg`          | Open Gulf surf |
-| Grid TL     | `images/great-room.jpeg`          | Great room under vaulted ceiling |
+| Grid TL     | `images/deck-gulf-view.jpeg`      | Covered deck overlooking the Gulf |
 | Grid TR     | `images/wall-of-windows.jpeg`     | Wall of windows, main living level |
 | Grid BL     | `images/exterior-beachside.jpeg`  | Beachside elevation, three-story home |
 | Grid BR     | `images/exterior-structure.jpeg`  | Decks and pilings under construction |

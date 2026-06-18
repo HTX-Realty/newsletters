@@ -35,27 +35,41 @@ keep every edition self-contained.
       editions/2026/2026-06-24-my-slug/newsletter.html
    ```
 2. **Drop the photos** into that edition's `images/` folder.
-3. **Edit the copy** — headline, address, price, specs, and any deal-specific
-   figures — directly in `newsletter.html`.
+3. **Fill in the copy** — the template ships blank, with every headline,
+   address, price, stat, figure, and body paragraph written as a `##TOKEN##`
+   placeholder. Find-and-replace each token with that week's content. The full
+   token reference (grouped by section, with example values) lives in the
+   comment block at the top of the template. Sections are modular — delete any
+   `<tr>` you don't need that week (e.g. the cost-seg ledger).
 4. **Upload the images** to Brevo's content library (or any public host) and
-   find-and-replace the `##TOKEN##` placeholders with the hosted URLs. The
-   token → image mapping is listed in the comment block at the top of each
-   `newsletter.html`.
+   find-and-replace the image `##TOKEN##` placeholders with the hosted URLs.
 5. **Import into Brevo**, set the subject line / preview text (record them in
    the edition's `README.md`), test, and send.
 
-## Image tokens
+## Tokens
 
-Every `newsletter.html` references images by placeholder so the layout can be
-designed before assets are hosted:
+The template's copy is fully tokenized — every headline, stat, and figure is a
+`##TOKEN##` placeholder, so the layout can be built before any content exists.
+The **authoritative, grouped list with example values is in the comment block
+at the top of `templates/brevo-newsletter.template.html`.** Content tokens
+cover the edition label/date, eyebrows, headlines, address, price, specs, the
+cost-seg ledger figures, the six feature cards, the four selling points, and
+the footer disclaimer.
 
-| Token        | Image                              |
-|--------------|------------------------------------|
-| `##LOGO##`   | `brand/htx-logo.png`               |
-| `##HERO##`   | edition `images/` — hero photo     |
-| `##BEACH##`  | edition `images/` — secondary photo|
-| `##GRID1##`–`##GRID4##` | edition `images/` — 2×2 photo grid |
-| `##EMBLEM##` | small HTX mark (crop from the logo)|
+The **images** are wired to labelled placeholder graphics in
+[`templates/placeholders/`](templates/placeholders) so the blank template
+previews cleanly:
+
+| Slot      | Placeholder                       | Replace with |
+|-----------|-----------------------------------|--------------|
+| Hero      | `placeholders/hero.svg`           | hosted hero photo URL |
+| Secondary | `placeholders/secondary.svg`      | hosted lifestyle photo URL |
+| Grid 1–4  | `placeholders/grid-1.svg` … `grid-4.svg` | hosted interior photo URLs |
+
+Swap each `src` for your hosted photo URL when building an edition. The HTX
+**logo** (header), **emblem** (footer), and the **agent contact card** are
+already wired to the brand assets / constants in this repo — nothing to
+replace.
 
 ## What's public vs. local
 

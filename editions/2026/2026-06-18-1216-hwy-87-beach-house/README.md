@@ -22,22 +22,24 @@ angle.
 
 ## Images
 
-| Slot      | File                              | Subject |
-|-----------|-----------------------------------|---------|
-| Hero      | `images/hero-front-elevation.jpeg`| Front elevation on stilts |
-| Secondary | `images/gulf-beach.jpeg`          | Open Gulf surf |
-| Grid 1    | `images/great-room.jpeg`          | Great room under vaulted ceiling |
-| Grid 2    | `images/wall-of-windows.jpeg`     | Wall of windows, main living level |
+| Slot        | File                              | Subject |
+|-------------|-----------------------------------|---------|
+| Hero        | `images/hero-front-elevation.jpeg`| Front elevation on stilts |
+| Secondary   | `images/gulf-beach.jpeg`          | Open Gulf surf |
+| Grid TL     | `images/great-room.jpeg`          | Great room under vaulted ceiling |
+| Grid TR     | `images/wall-of-windows.jpeg`     | Wall of windows, main living level |
+| Grid BL     | `images/exterior-beachside.jpeg`  | Beachside elevation, three-story home |
+| Grid BR     | `images/exterior-structure.jpeg`  | Decks and pilings under construction |
 
-Photos are wired to the local `images/` folder so the file previews in a
-browser. **Before importing into Brevo,** upload these four to the Brevo
-Content library (or any public host) and find-and-replace the `images/…`
-paths with the hosted URLs. The HTX logo and footer emblem are already hosted
-from this repo's `brand/` folder.
+The hero and secondary are wired to absolute GitHub raw URLs (load anywhere).
+The four grid photos are wired to the local `images/` folder so the file
+previews in a browser. **Before importing into Brevo,** upload the grid photos
+to the Brevo Content library (or any public host) and find-and-replace the
+`images/…` paths with the hosted URLs. The HTX logo and footer emblem are
+already hosted from this repo's `brand/` folder.
 
 ## Notes
 
-- This edition uses four photos, so the "What's Inside" photo grid is a single
-  2-up row rather than the template's 2×2. Add two more photos and restore the
-  second `<tr>` from `templates/brevo-newsletter.template.html` for a full grid.
+- The "What's Inside" photo grid is the full 2×2: great room + wall of windows
+  on top, beachside elevation + structure-under-construction on the bottom.
 - All cost-seg figures are CSA Partners estimates — see the footer disclaimer.

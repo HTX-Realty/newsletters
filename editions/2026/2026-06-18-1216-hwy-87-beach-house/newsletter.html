@@ -10,15 +10,16 @@
   HTX REALTY — BREVO EMAIL NEWSLETTER
   Edition: 2026-06-18 · 1216 Hwy 87 beach house
 
-  Photos are wired to this edition's local images/ folder so
-  the file previews in a browser. Before importing into Brevo,
-  upload the 4 photos to your Brevo Content library (or any
-  public host) and Find & Replace the relative paths with the
-  hosted URLs:
-    images/hero-front-elevation.jpeg  -> hosted hero URL
-    images/gulf-beach.jpeg            -> hosted gulf URL
-    images/great-room.jpeg            -> hosted great-room URL
-    images/wall-of-windows.jpeg       -> hosted windows URL
+  Image wiring (6 photos). Before importing into Brevo, upload
+  any relative-path photos to your Brevo Content library (or
+  any public host) and Find & Replace the relative paths with
+  the hosted URLs:
+    hero  -> wired to the GitHub raw URL (absolute; loads anywhere)
+    gulf  -> wired to the GitHub raw URL (absolute; loads anywhere)
+    images/great-room.jpeg            -> hosted great-room URL   (grid TL)
+    images/wall-of-windows.jpeg       -> hosted windows URL      (grid TR)
+    images/exterior-beachside.jpeg    -> hosted beachside URL    (grid BL)
+    images/exterior-structure.jpeg    -> hosted structure URL    (grid BR)
   The HTX logo (header) and emblem (footer) are already hosted.
   ============================================================
 -->
@@ -71,7 +72,7 @@
   <!-- ===== HERO IMAGE ===== -->
   <tr>
     <td style="font-size:0;line-height:0;">
-      <img src="images/hero-front-elevation.jpeg" width="600" alt="1216 Highway 87 — beachfront elevation, Gilchrist TX" style="width:100%;max-width:600px;height:auto;">
+      <img src="https://github.com/HTX-Realty/newsletters/blob/main/editions/2026/2026-06-17-1216-hwy-87-beach-house/images/WhatsApp%20Image%202026-06-18%20at%205.19.28%20AM%202.jpeg?raw=true" width="600" alt="1216 Highway 87 — beachfront elevation, Gilchrist TX" style="width:100%;max-width:600px;height:auto;">
     </td>
   </tr>
 
@@ -149,7 +150,7 @@
   </tr>
 
   <!-- ===== SECONDARY IMAGE + CAPTION ===== -->
-  <tr><td style="font-size:0;line-height:0;"><img src="images/gulf-beach.jpeg" width="600" alt="Open Gulf surf at Bolivar Peninsula" style="width:100%;max-width:600px;height:auto;"></td></tr>
+  <tr><td style="font-size:0;line-height:0;"><img src="https://github.com/HTX-Realty/newsletters/blob/main/editions/2026/2026-06-18-1216-hwy-87-beach-house/images/gulf-beach.jpeg?raw=true" width="600" alt="Open Gulf surf at Bolivar Peninsula" style="width:100%;max-width:600px;height:auto;"></td></tr>
   <tr>
     <td style="background:#0A2342;padding:18px 28px;" class="stack-pad">
       <div style="font-family:Arial,Helvetica,sans-serif;font-size:10px;font-weight:bold;letter-spacing:2px;text-transform:uppercase;color:#9FB2CB;">Steps From The Gulf &middot; Bolivar Peninsula</div>
@@ -215,11 +216,15 @@
         </tr>
       </table>
 
-      <!-- photo grid (2 interior shots available for this edition) -->
+      <!-- photo grid 2x2 -->
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="padding-top:18px;">
         <tr>
-          <td class="stack" width="50%" style="padding:0 4px 0 0;font-size:0;line-height:0;"><img src="images/great-room.jpeg" width="284" alt="Great room under the vaulted ceiling" style="width:100%;height:auto;"></td>
-          <td class="stack" width="50%" style="padding:0 0 0 4px;font-size:0;line-height:0;"><img src="images/wall-of-windows.jpeg" width="284" alt="Wall of windows on the main living level" style="width:100%;height:auto;"></td>
+          <td class="stack" width="50%" style="padding:0 4px 8px 0;font-size:0;line-height:0;"><img src="images/great-room.jpeg" width="284" alt="Great room under the vaulted ceiling" style="width:100%;height:auto;"></td>
+          <td class="stack" width="50%" style="padding:0 0 8px 4px;font-size:0;line-height:0;"><img src="images/wall-of-windows.jpeg" width="284" alt="Wall of windows on the main living level" style="width:100%;height:auto;"></td>
+        </tr>
+        <tr>
+          <td class="stack" width="50%" style="padding:0 4px 0 0;font-size:0;line-height:0;"><img src="images/exterior-beachside.jpeg" width="284" alt="Beachside elevation of the three-story home" style="width:100%;height:auto;"></td>
+          <td class="stack" width="50%" style="padding:0 0 0 4px;font-size:0;line-height:0;"><img src="images/exterior-structure.jpeg" width="284" alt="Decks and pilings under construction" style="width:100%;height:auto;"></td>
         </tr>
       </table>
     </td>

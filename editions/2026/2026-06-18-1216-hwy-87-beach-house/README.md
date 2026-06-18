@@ -24,7 +24,7 @@ angle.
 
 | Slot        | File                              | Subject |
 |-------------|-----------------------------------|---------|
-| Hero        | `images/hero-front-elevation.jpeg`| Front elevation on stilts |
+| Hero        | `images/new-hero.png`             | Finished front elevation on stilts |
 | Secondary   | `images/gulf-beach.jpeg`          | Open Gulf surf |
 | Grid TL     | `images/great-room.jpeg`          | Great room under vaulted ceiling |
 | Grid TR     | `images/wall-of-windows.jpeg`     | Wall of windows, main living level |

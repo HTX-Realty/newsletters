@@ -31,12 +31,11 @@ angle.
 | Grid BL     | `images/exterior-beachside.jpeg`  | Beachside elevation, three-story home |
 | Grid BR     | `images/exterior-structure.jpeg`  | Decks and pilings under construction |
 
-The hero and secondary are wired to absolute GitHub raw URLs (load anywhere).
-The four grid photos are wired to the local `images/` folder so the file
-previews in a browser. **Before importing into Brevo,** upload the grid photos
-to the Brevo Content library (or any public host) and find-and-replace the
-`images/…` paths with the hosted URLs. The HTX logo and footer emblem are
-already hosted from this repo's `brand/` folder.
+All six photos are wired to absolute GitHub raw URLs from this repo, so the
+email renders anywhere with no upload step — it can be imported straight into
+Brevo. The HTX logo and footer emblem are likewise hosted from this repo's
+`brand/` folder. (To host the photos elsewhere instead, find-and-replace the
+six image URLs.)
 
 ## Notes
 

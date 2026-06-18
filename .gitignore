@@ -1,0 +1,28 @@
+# ── Internal / agent tooling (keep local only) ─────────────────
+CLAUDE.md
+AGENTS.md
+.claude/
+.cursor/
+
+# ── Private notes & drafts (anything not meant to be public) ────
+# Stash internal-only material in any of these and it won't be pushed.
+_internal/
+**/_internal/
+.notes/
+drafts/
+*.local.md
+*.local.html
+
+# ── Recipient / contact / analytics data ───────────────────────
+# Email lists and Brevo exports can contain personal data — never publish.
+*.csv
+*.xlsx
+*.numbers
+exports/
+
+# ── OS / editor junk ───────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/

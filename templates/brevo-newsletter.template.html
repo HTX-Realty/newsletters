@@ -8,18 +8,18 @@
 <!--
   ============================================================
   HTX REALTY — BREVO EMAIL NEWSLETTER
-  Before importing into Brevo, upload the 8 images to your
-  Brevo Content library (or any public host) and replace these
-  tokens with the hosted image URLs (Find & Replace in a text editor):
+  Logo (header) and emblem (footer) are already wired to the
+  brand assets hosted in this repo. Before importing into Brevo,
+  upload the 6 property photos to your Brevo Content library
+  (or any public host) and replace these tokens with the hosted
+  URLs (Find & Replace in a text editor):
 
-    ##LOGO##     ->  htx-logo.png
-    ##HERO##     ->  htx-hero.jpg
-    ##BEACH##    ->  htx-beach.jpg
+    ##HERO##     ->  htx-hero.jpg     (front / hero shot)
+    ##BEACH##    ->  htx-beach.jpg    (gulf beach)
     ##GRID1##    ->  htx-grid-1.jpg   (great room)
     ##GRID2##    ->  htx-grid-2.jpg   (wall of windows)
     ##GRID3##    ->  htx-grid-3.jpg   (beachside elevation)
     ##GRID4##    ->  htx-grid-4.jpg   (deck / structure)
-    ##EMBLEM##   ->  htx-emblem.png
   ============================================================
 -->
 <style type="text/css">
@@ -47,7 +47,7 @@
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
           <td align="left" valign="middle" width="320">
-            <img src="##LOGO##" width="280" alt="HTX Realty Group" style="width:280px;max-width:280px;height:auto;">
+            <img src="https://raw.githubusercontent.com/HTX-Realty/newsletters/main/brand/htx-logo.png" width="280" alt="HTX Realty Group" style="width:280px;max-width:280px;height:auto;">
           </td>
           <td align="right" valign="middle" style="font-family:Arial,Helvetica,sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#6E7280;font-weight:bold;line-height:1.7;">
             Investor Feature<br><span style="color:#0A2342;">June 2026</span>
@@ -268,7 +268,13 @@
     <td style="background:#0A2342;padding:24px 28px;" class="stack-pad">
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td width="64" valign="middle"><img src="##EMBLEM##" width="54" alt="HTX Realty Group" style="width:54px;height:54px;"></td>
+          <td width="64" valign="middle">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+              <td align="center" valign="middle" width="54" height="54" style="width:54px;height:54px;background:#ffffff;border-radius:8px;">
+                <img src="https://raw.githubusercontent.com/HTX-Realty/newsletters/main/brand/htx-emblem.png" width="40" height="40" alt="HTX Realty Group" style="width:40px;height:40px;display:block;margin:7px;">
+              </td>
+            </tr></table>
+          </td>
           <td valign="middle" style="font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:1.7;color:#C7D3E2;">
             <b style="color:#fff;">HTX Realty Group</b> &middot; Keller Williams Southwest<br>
             1650 Highway 6, Suite 350 &middot; Sugar Land, TX 77478<br>
